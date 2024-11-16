@@ -10,7 +10,7 @@ set(LIBNAME osspecificlib)
 
 find_package(Qt6 COMPONENTS Core DBus REQUIRED)
 find_package(X11 REQUIRED)
-find_library(PROCPS_LIBRARY NAMES proc procps REQUIRED)
+find_library(PROCPS_LIBRARY NAMES proc proc2 procps REQUIRED)
 qt_standard_project_setup()
 
 #----------------------------------------------------------------------------------------------------------------------
